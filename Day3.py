@@ -7,24 +7,24 @@ if height >= 120:
     if photo == "Y":
         print("You can ride.")
         if age < 12 :
-            cost += 5 + 3
+            cost = 5 + 3
             print(f"You have to pay {cost}$")
         elif 12 <= age <= 18:
-            cost += 7 + 3
+            cost = 7 + 3
             print(f"You have to pay {cost}$")
         else:
-            cost += 12 + 3
+            cost = 12 + 3
             print(f"You have to pay {cost}$.")
     elif photo == "N":
         print("You can ride.")
         if age < 12:
-            cost += 5
+            cost = 5
             print(f"You have to pay {cost}$")
         elif 12 <= age <= 18:
-            cost += 7
+            cost = 7
             print(f"You have to pay {cost}$")
         else:
-            cost += 12
+            cost = 12
             print(f"You have to pay {cost}$.")
 else:
     print("You can't ride.")
